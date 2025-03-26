@@ -1,1 +1,0 @@
-# MintIce-Adventure.github.io
