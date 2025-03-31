@@ -115,10 +115,10 @@ Yuki是你的好朋友，网络上的。你并不知道他的具体身份，但�
 [[试试可行的操作]]
 [[查看背包]]
 [[搞清楚死亡惩罚]]
-(if: $yuki is not 1)[(live: 24s)[不要在这里停留太久(stop:)]
-(live: 29s)[不要在这里停留太久(stop:)]
-(live: 34s)[你感觉到周围有什么东西在盯着你看(stop:)]
-(live: 38s)[一个|continue&gt;[可怕的生物](click: ?continue)[(append: ?result)[
+(if: $yuki is not 1)[(live: 20s)[不要在这里停留太久(stop:)]
+(live: 24s)[不要在这里停留太久(stop:)]
+(live: 29s)[你感觉到周围有什么东西在盯着你看(stop:)]
+(live: 33s)[一个|continue&gt;[可怕的生物](click: ?continue)[(append: ?result)[
 “汪！汪！”
 是一只小狗。
 你摸了摸小狗的头。在它的脖子上挂着一个狗牌
@@ -143,7 +143,7 @@ Yuki是你的好朋友，网络上的。你并不知道他的具体身份，但�
 
 这倒是有些出乎你的预料，一份神秘的礼物。可疑的链接。十几年的冲浪经验（尤其是墙外经验）告诉你，不要随便点开网络上的链接，但你有点抑制不住自己的好奇心。
 
-[[点开它]]</tw-passagedata><tw-passagedata pid="7" name="试试可行的操作" tags="" position="1175,450" size="100,100">你决定试试看自己在这个世界能做到什么。
+[[点开它]]</tw-passagedata><tw-passagedata pid="7" name="试试可行的操作" tags="" position="1200,450" size="100,100">你决定试试看自己在这个世界能做到什么。
 
 [[尝试攻击]]
 [[尝试飞行]]
@@ -164,7 +164,7 @@ Yuki是你的好朋友，网络上的。你并不知道他的具体身份，但�
 [[让我们回到也许...2008年？|结局十]]
 (if: $tech &gt;2)[ [[让我们飞向2088年！这次一定没问题了！|结局九]] ](else: )[ [[让我们飞向2088年！|失败]] ]
 
-</tw-passagedata><tw-passagedata pid="9" name="尝试飞行" tags="" position="1300,300" size="100,100">你想试试自己的移动方式，显然你并不满足于用脚走路。
+</tw-passagedata><tw-passagedata pid="9" name="尝试飞行" tags="" position="1350,300" size="100,100">你想试试自己的移动方式，显然你并不满足于用脚走路。
 你张开双臂，像母鸡一样扑腾了起来，但似乎并没有什么效果。
 (if: $yuki is 1)[
 Yuki看到你着急的样子，绕着你转着圈扑腾了起来。
@@ -176,7 +176,7 @@ Yuki努力地摆动短小的四肢向你飞了过来（更像是在空气中游�
 [[查看四周|探索周围环境]]
 ]
 
-[[试试其他操作|试试可行的操作]]</tw-passagedata><tw-passagedata pid="10" name="尝试拆除地面" tags="" position="1050,350" size="100,100">你尝试拆除地面，它居然真的能被你一块一块地拆掉。
+[[试试其他操作|试试可行的操作]]</tw-passagedata><tw-passagedata pid="10" name="尝试拆除地面" tags="" position="1175,200" size="100,100">你尝试拆除地面，它居然真的能被你一块一块地拆掉。
 呃，我好像不小心打开创造模式了。让我们来修复它。
 （你的科技认知增加了）
 (set: $tech to $tech + 1)
@@ -224,8 +224,8 @@ Yuki努力地摆动短小的四肢向你飞了过来（更像是在空气中游�
 [[试试可行的操作]]
 [[查看背包]]
 [[搞清楚死亡惩罚]]
-(if: $yuki is not 1)[(live: 6s)[你感觉到周围有什么东西在盯着你看(stop:)]
-(live: 10s)[野生的|continue&gt;[小狗](click: ?continue)[(append: ?result)[
+(if: $yuki is not 1)[(live: 4s)[你感觉到周围有什么东西在盯着你看(stop:)]
+(live: 8s)[野生的|continue&gt;[小狗](click: ?continue)[(append: ?result)[
 “汪！汪！”
 你摸了摸小狗的头。在它的脖子上挂着一个狗牌
 (text-style: &quot;underline&quot;)[“小狗Yuki。属于最好的Mint主人。”]
@@ -234,7 +234,7 @@ Yuki努力地摆动短小的四肢向你飞了过来（更像是在空气中游�
 (set: $yuki to 1)
 在它的帮助下也许会有一些不一样的发现。
 ]]出现了！(stop:)]]
-|result&gt;[]</tw-passagedata><tw-passagedata pid="15" name="呵！哈！包来！" tags="" position="1150,275" size="100,100">(if: $yuki is not 1)[什么都没有发生。你个哈批。
+|result&gt;[]</tw-passagedata><tw-passagedata pid="15" name="呵！哈！包来！" tags="" position="1100,350" size="100,100">(if: $yuki is not 1)[什么都没有发生。你个哈批。
 [[...试试别的办法|查看背包]]]
 (if: $yuki is 1)[“汪呜！” Yuki给你叼来了一个小包！
 可是Yuki的包又是存放在哪里的？呃，我们还是不要深究这个问题了。
@@ -393,7 +393,7 @@ Yuki努力地摆动短小的四肢向你飞了过来（更像是在空气中游�
 
 
 [[试试其他操作|试试可行的操作]]
-</tw-passagedata><tw-passagedata pid="22" name="尝试修改文字" tags="" position="1100,575" size="100,100">(set: $mom to 1)
+</tw-passagedata><tw-passagedata pid="22" name="尝试修改文字" tags="" position="1200,575" size="100,100">(set: $mom to 1)
 修改文字？你要把(link: &quot;系统提示&quot;)[&lt;del&gt;系统提示&lt;/del&gt;无关紧要的废话(set: $edited to $edited+1)]给改了？
 你(link: &quot;不能&quot;)[&lt;del&gt;不能&lt;/del&gt;可以(set: $edited to $edited+1)]这样做！
 这游戏是(link: &quot;靠文字驱动&quot;)[&lt;del&gt;靠文字驱动&lt;/del&gt;抄袭原神(set: $edited to $edited+1)]的，你(link: &quot;跟随我体验这个世界就行了&quot;)[&lt;del跟随我体验这个世界就行了&lt;/del&gt;爱我我爱你蜜雪冰城甜蜜蜜(set: $edited to $edited+1)]。
@@ -466,7 +466,7 @@ Yuki努力地摆动短小的四肢向你飞了过来（更像是在空气中游�
 当然如果你想[[留在这里|进入异世界new]]，也可以。
 
 [[已收集结局四：吟游诗人|进入异世界new]]
-(set: $ed to $ed+1)</tw-passagedata><tw-passagedata pid="25" name="前往树林" tags="" position="1275,550" size="100,100">树林幽深，阳光从树叶间洒下，像细碎的金粉。空气中带着青草和苔藓的气息，偶尔有鸟鸣划破静谧。走进林中更深处，你听见微弱的挣扎声——一只银白色的鹿被荆棘缠住了四肢，动弹不得。它的眼神惊惧却温柔，仿佛在请求帮助。
+(set: $ed to $ed+1)</tw-passagedata><tw-passagedata pid="25" name="前往树林" tags="" position="1325,575" size="100,100">树林幽深，阳光从树叶间洒下，像细碎的金粉。空气中带着青草和苔藓的气息，偶尔有鸟鸣划破静谧。走进林中更深处，你听见微弱的挣扎声——一只银白色的鹿被荆棘缠住了四肢，动弹不得。它的眼神惊惧却温柔，仿佛在请求帮助。
 
 (if: $rabbit is not 1)[不远处，两只兔子正围着一根蘑菇桩激烈争吵。他们悬浮在半空中，身上闪烁着微光，完全没有察觉鹿的存在。
 
@@ -730,7 +730,7 @@ Yuki努力地摆动短小的四肢向你飞了过来（更像是在空气中游�
 [[已收集结局五：骇客娃娃|虚空]]]
 (set: $ed to $ed+1)
 
-</tw-passagedata><tw-passagedata pid="41" name="学习" tags="" position="875,1025" size="100,100">(if: $learnt is not 1)[老汉静静地看了你一会，“我在你身上看到了学习的决心，这很好。我会把我的特异功能传授给你，跟我来吧。”
+</tw-passagedata><tw-passagedata pid="41" name="学习" tags="" position="900,1050" size="100,100">(if: $learnt is not 1)[老汉静静地看了你一会，“我在你身上看到了学习的决心，这很好。我会把我的特异功能传授给你，跟我来吧。”
 
 他把你带进了道场的后房，这里简单地摆着一张床，这当然是老汉的床，但很干净，并不像正常中老年男人的床铺那样理所当然的脏。床头摆着一本杂志
 
